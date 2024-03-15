@@ -21,7 +21,7 @@ namespace Banking.Model
     internal abstract class Account
     {
         public int AccountNumber { get; set; }
-        public List<Transaction>? TransactionList { get; set; }
+        public List<Transaction> TransactionList { get; set; }
         public double Balance { get; set; }
         public DateTime OpeningDate { get; set; }
         public abstract void Deposit(double amount);
